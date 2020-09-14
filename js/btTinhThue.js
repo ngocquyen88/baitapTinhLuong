@@ -4,7 +4,7 @@ function tinhLuong() {
     let thunhap=parseFloat(document.getElementById('luong').value);
     if (thunhap < 10000000) {
         alert("Bạn không phải chịu thuế!");
-        //luong1Nam(thunhap);
+        luong1Nam(thunhap);
     } else if (thunhap>=10000000 && thunhap<50000000) {
         document.getElementById("hienthi").innerHTML = ("Bạn phải chịu thuế 1 năm là:"+(0.1*thunhap*12));
         luong1Nam(thunhap*0.9);
